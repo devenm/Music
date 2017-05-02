@@ -1,0 +1,65 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:id="@+id/card_view"
+        android:orientation="horizontal">
+        <com.example.deepak.radio.classes.CustomTextView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/box"
+            android:background="@drawable/circle"
+            android:layout_margin="5dp"
+            android:textSize="40dp"
+android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+        <com.example.deepak.radio.classes.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:id="@+id/songname"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/box"
+            android:layout_centerVertical="true"
+            />
+        <com.example.deepak.radio.classes.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:id="@+id/artistdescription"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/box"
+            android:layout_below="@+id/songname"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4eded"
+        android:layout_margin="5dp"></View>
+
+
+
+
+</LinearLayout>

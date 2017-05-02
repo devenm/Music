@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/playlist"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pathDR"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:text="Directory"
+        android:textColor="#ffffff"
+        android:textSize="19sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="bottom"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:typeface="monospace" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff" />
+
+    <ListView
+        android:id="@+id/pathlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

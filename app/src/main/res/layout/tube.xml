@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vplay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="#115292e9"
+    >
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="fitCenter"
+                     />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pbar"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <com.example.deepak.radio.classes.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:text="title"
+          android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+           />
+        <com.example.deepak.radio.classes.CustomTextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:maxLines="3"
+            android:textColor="@color/white"
+            android:text="Description"
+            android:gravity="center"
+           />
+
+
+    </LinearLayout>
+</LinearLayout>
